@@ -27,17 +27,6 @@ body {
   margin-bottom: 80px;
 }
 
-.title-input,
-.author-input,
-.content-area {
-  width: 100%;
-  border: none;
-  outline: none;
-  background: transparent;
-  font-family: inherit;
-}
-
-/* Título */
 .title {
   font-size: 32px;
   font-weight: 700;
@@ -45,35 +34,8 @@ body {
   margin-bottom: 12px;
 }
 
-/* Autor */
-.author {
-  font-size: 15px;
-  color: #757575;
-  margin-bottom: 28px;
-  font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-}
-
-.author-input::placeholder {
-  color: #b3b3b3;
-}
-
-/* Cuerpo de texto editable */
-.content-area {
-  min-height: 300px;
-  font-size: 19px;
-  line-height: 1.6;
-  color: #222222;
-  outline: none;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
-
-.content-area:empty:before {
-  content: attr(placeholder);
-  color: #757575;
-  cursor: text;
-  display: block;
+.imp {
+  font-weight: 900;
 }
 
 @media (max-width: 720px) {
