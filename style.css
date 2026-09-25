@@ -23,7 +23,7 @@ body {
 .page {
   width: 100%;
   max-width: 680px;
-  margin-top: 60px;
+  margin-top: 24px;
   margin-bottom: 80px;
 }
 
@@ -53,6 +53,64 @@ ul {
   border-top: 1px solid #ccc;
   padding-top: 1em;
   font-size: 0.75em;
+}
+
+.obsidian-callout {
+  /* Variables personalizables */
+  --callout-color: 255, 0, 0;
+  --callout-border-width: 0px;
+  --callout-border-opacity: 0.25;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 16px;
+  margin: 0;
+  border-radius: 8px;
+  background-color: rgba(var(--callout-color), 0.1);
+  border-left: 4px solid rgb(var(--callout-color));
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  color: #000000; /* Texto claro pensado para modo oscuro */
+}
+
+/* Encabezado: icono y título */
+.callout-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: rgb(var(--callout-color));
+}
+
+.callout-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+}
+
+.callout-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Contenido del callout */
+.callout-content {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.callout-content p {
+  margin: 0;
 }
 
 @media (max-width: 720px) {
